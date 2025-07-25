@@ -1374,7 +1374,7 @@ a.social-skype:hover {
 #home-content-2,
 #home-content-25,
 #home-content-33 {
-  background-image: url("img/images/bricks.png");
+  background-image: url("img/images/bricks.webp");
 }
 #home-content-4,
 #home-content-94,
@@ -2792,13 +2792,13 @@ footer a,
 
 /* Home Slider */
 .slide-1 {
-  background-image: url("img/images/bricks.png");
+  background-image: url("img/images/bricks.webp");
 }
 .slide-2 {
-  background-image: url("img/images/bricks.png");
+  background-image: url("img/images/bricks.webp");
 }
 .slide-3 {
-  background-image: url("img/images/bricks.png");
+  background-image: url("img/images/bricks.webp");
 }
 
 /* Top Pages Image */
