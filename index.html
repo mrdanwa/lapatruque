@@ -65,61 +65,6 @@
     <link rel="manifest" href="img/favicon_io/site.webmanifest" />
   </head>
   <body class="home">
-    <!-- POPUP APERTURA START -->
-    <div
-      id="apertura-popup"
-      style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.85);
-      "
-    >
-      <div style="position: relative; max-width: 95vw; max-height: 95vh">
-        <button
-          id="close-apertura-popup"
-          aria-label="Cerrar"
-          style="
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: translate(50%, -50%);
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            border: none;
-            font-size: 2rem;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          &times;
-        </button>
-        <img
-          src="img/popup/apertura.webp"
-          alt="Próxima apertura"
-          style="
-            display: block;
-            max-width: 90vw;
-            max-height: 90vh;
-            border-radius: 12px;
-            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
-          "
-        />
-      </div>
-    </div>
-    <!-- POPUP APERTURA END -->
     <div class="menu-mask"></div>
     <!-- MOBILE MENU HOLDER -->
     <div class="mobile-menu-holder">
@@ -235,7 +180,7 @@
           <div class="slider-caption">
             <div class="slider-text">
               <div class="intro-txt">Próxima apertura</div>
-              <h2 class="sancreek">Agosto 2025</h2>
+              <h2 class="sancreek">Septiembre 2025</h2>
               <p>
                 Muy pronto podrás descubrir qué es una
                 <strong>"Patruque"</strong>, la patata asada que añorabas sin
@@ -644,20 +589,5 @@
     <script src="js/init.js"></script>
     <script src="js/jquery.form.min.js"></script>
     <!-- /JAVASCRIPT FILES -->
-
-    <!-- POPUP APERTURA SCRIPT -->
-    <script>
-      // Popup apertura logic
-      document.addEventListener("DOMContentLoaded", function () {
-        var popup = document.getElementById("apertura-popup");
-        var closeBtn = document.getElementById("close-apertura-popup");
-        if (popup && closeBtn) {
-          closeBtn.addEventListener("click", function () {
-            popup.style.display = "none";
-          });
-        }
-      });
-    </script>
-    <!-- END POPUP APERTURA SCRIPT -->
   </body>
 </html>
