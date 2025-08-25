@@ -272,6 +272,20 @@
                           placeholder="Mensaje"
                         ></textarea>
                       </p>
+                      <!-- Enhanced honeypot fields -->
+                      <div style="display: none !important">
+                        <input
+                          type="text"
+                          name="website"
+                          autocomplete="off"
+                          tabindex="-1"
+                        />
+                        <input
+                          type="hidden"
+                          name="timestamp"
+                          id="timestamp-field"
+                        />
+                      </div>
                       <p class="antispam">
                         Deja este campo vacío: <input type="text" name="url" />
                       </p>
@@ -514,6 +528,14 @@
     <script src="js/init.js"></script>
     <script src="js/jquery.form.min.js"></script>
     <script src="js/contactform-home.js"></script>
+    <script>
+      // Set timestamp for honeypot when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("timestamp-field").value = Math.floor(
+          Date.now() / 1000
+        );
+      });
+    </script>
     <!-- /JAVASCRIPT FILES -->
   </body>
 </html>
